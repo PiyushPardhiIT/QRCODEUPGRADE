@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <label for="text-input">Enter text or URL:</label>
+    <input type="text" id="text-input" placeholder="Enter text or URL">
+    <br><br>
+    <label for="color-select">Select color:</label>
+    <input type="color" id="color-select">
+    <br><br>
+    <label for="dimension-input">Select dimensions (px):</label>
+    <input type="number" id="dimension-input" min="100" max="500" value="200">
+    <br><br>
+    <button onclick="generateQR()">Generate QR Code</button>
+    <div id="qrcode"></div>
+    <br><br>
+    <button onclick="printQR()">Print QR Code</button>
+  </div>
+
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
